@@ -1,0 +1,10 @@
+<h1>Hello from Rails</h1>
+<p> It is the time in <%= @time %></p>
+<%= 1 + 2 %>
+<p> List of all files in current directory: 
+<% @files.each do |file|%>
+    <ul><%= file %></ul>
+<% end %>
+</p>
+<p>Time in one hour <%= 1.hour.from_now.localtime%>
+<p> Say <%= link_to "Goodbye", articles_goodbye_path %>
